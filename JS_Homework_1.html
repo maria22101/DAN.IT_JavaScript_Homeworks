@@ -28,12 +28,12 @@ You are not allowed to visit this website.
 
 <script>
     let userName = prompt('Enter your name','');
-    while (userName == null || userName == "" || userName == "null" || userName == " ") {
+    while (userName == null || userName === "" || userName === "null" || userName === " ") {
         userName = prompt('This field must be filled with your name to continue',userName);
     }
 
     let userAge = prompt('Enter your age','');
-    while (userAge == null || userAge == "" || isNaN(userAge)) {
+    while (userAge == null || userAge === "" || isNaN(userAge)) {
         userAge = prompt('This field must be filled with your age as a number to continue',userAge);
     }
 
@@ -52,7 +52,6 @@ You are not allowed to visit this website.
             alert('Welcome, '+ userName);
         }
     }
-
 
 </script>
 
