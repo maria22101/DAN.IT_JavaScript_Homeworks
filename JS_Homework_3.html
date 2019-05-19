@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS_Homework_3</title>
+</head>
+<body>
+
+<!--Написать функцию подсчета факториала числа.
+Считать с помощью модального окна браузера число, которое введет пользователь.
+С помощью функции посчитать факториал числа, которое ввел пользователь, и вывести его на экран.
+Использовать синтаксис ES6 для работы с перемеными и функциями. -->
+
+<script>
+
+    let num = prompt('Enter a number for factorial calculation:', '');
+    function factorial (x){
+        let result = 0;
+        let count = num;
+        if ( x == 1) {
+            return 1;
+        }else {
+            while (count !== 1) {
+                result = factorial(x - 1) * x;
+                count--;
+            }
+            return result;
+        }
+    }
+    alert('factorial of ' + num + ' is ' + factorial(num));
+
+</script>
+
+</body>
+</html>
