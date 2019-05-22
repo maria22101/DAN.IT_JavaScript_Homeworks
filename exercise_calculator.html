@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+
+    let first;
+    let second;
+    let result = 0;
+
+    let calculator = {
+        read: function(){
+            first = prompt('enter 1st number', '');
+            first = Number(first);
+            second = prompt('enter 2nd number', '');
+            second = Number(second);
+        },
+        sum: function () {
+            result = first + second;
+            return result;
+        },
+        mult: function () {
+            result = first * second;
+            return result;
+        }
+    }
+
+    calculator.read();
+    alert(calculator.sum());
+    alert(calculator.mult());
+
+</script>
+
+
+
+</body>
+</html>
