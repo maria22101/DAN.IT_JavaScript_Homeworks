@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>words count</title>
+</head>
+<body>
+
+<script>
+
+    // Create a function countWords(sentence) that gets a sentence and
+    // prints to the console the number of occurrences of each word in the
+    // sentence
+
+    let sentence = 'Why: the Earth is the best!!! in the Earth world, oh my best world!!'
+
+    let arr = [];
+    let i = 0;
+    let word = "";
+
+    for (let w = 0; w < sentence.length; w++) {
+        if (sentence[w] == "." || sentence[w] == "," || sentence[w] == ";" || sentence[w] == "!" ||
+            sentence[w] == "?" || sentence[w] == " " || sentence[w] == ";" || sentence[w] == ":") {
+            if (sentence[w - 1] == "." || sentence[w - 1] == "," || sentence[w - 1] == ";" || sentence[w - 1] == "!" ||
+                sentence[w - 1] == "?" || sentence[w - 1] == " " || sentence[w -1] == ";" || sentence[w - 1] == ":") {
+                continue;
+            } else {
+                arr[i] = word;
+                word = "";
+                i++;
+            }
+        } else {
+            word = word + sentence[w];
+        }
+    }
+
+    console.log(arr); //only words array, punctuation marks omitted
+
+    let map = new Map();
+
+    for (let elem of arr) {
+        if (!map.has(elem)) {
+            map.set(elem, 1);
+        } else {
+            let newCount = map.get(elem);
+            map.set(elem, newCount + 1);
+        }
+    }
+    console.log(map);
+
+</script>
+
+</body>
+</html>

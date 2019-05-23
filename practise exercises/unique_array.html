@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>unique_arr</title>
+</head>
+<body>
+
+<script>
+
+    let longArr = ['John', 'Harry', 'Mary', 'Elise', 'Elise', 'John', 'Mary'];
+
+    function uniqueArr(arr) {
+        let set = new Set();
+
+        for (let elem of arr) {
+            set.add(elem);
+        }
+
+        let newArr = [];
+        let count = 0;
+
+        for (let name of set) {
+            newArr[count] = name;
+            count++;
+        }
+
+        return newArr;
+    }
+
+    alert(uniqueArr(longArr));
+
+</script>
+
+</body>
+</html>

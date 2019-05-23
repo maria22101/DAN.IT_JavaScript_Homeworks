@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>map</title>
+</head>
+<body>
+
+<script>
+
+    let map = new Map();
+    map.set('1', 'stringOne');
+    map.set(2, 'number');
+    map.set(true, 'booleanTrue');
+
+    for(let value of map.values()){
+        alert(value);
+    }
+
+    //map can use objects as keys:
+    let user ={name: 'John'};
+    let visitCountMap = new Map();
+    visitCountMap.set(user, 25);
+    alert(visitCountMap.get(user));
+
+</script>
+
+</body>
+</html>

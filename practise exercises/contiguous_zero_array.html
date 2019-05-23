@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>zero array</title>
+</head>
+<body>
+
+<script>
+
+    // Write a function subArrayZero(arr) that gets an array and returns whether it contains
+    // a contiguous subarray whose sum is equal to 0.Your function should go over the array elements only once
+
+    function isZeroArray (arr) {
+        let flag = false;
+        let set = new Set();
+
+        for (let elem of arr) {
+            set.add(elem);
+        }
+
+        return set;
+    }
+
+    let arr1 = [-5, 12, 4, -7, 2, 1, 8];
+    let arr2 = [3, -2, -6, 2, 1, -2];
+    // alert(isZeroArray(arr1));
+    console.log(isZeroArray(arr2));
+
+    // to be continued!
+
+</script>
+
+</body>
+</html>

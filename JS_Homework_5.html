@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS_Homework_5</title>
+</head>
+<body>
+
+<!--Реализовать функцию полного клонирования объекта.-->
+
+<!-- Написать функцию для рекурсивного полного клонирования объекта (без единой передачи по ссылке,
+внутренняя вложенность свойств объекта может быть достаточно большой).
+Функция должна успешно копировать свойства в виде объектов и массивов на любом уровне вложенности.
+Использовать синтаксис ES6 для работы с перемеными, функциями и объектами. -->
+
+<script>
+
+    function copyObj(oldObj, newObj) {
+        for (let key in oldObj) {
+            if (typeof oldObj.key == 'object') {
+                copyObj(oldObj[key], {})
+            } else {
+                newObj[key] = oldObj[key];
+            }
+        }
+        return newObj
+    }
+
+    //check:
+    let old = {
+        name: 'Jan',
+        city: 'Kiev',
+        friends:
+            {
+                close_friends: ['Leo', 'Maia'],
+                family: ['mum', 'dad', 'sister'],
+                colleagues: {chef:'Dima', managers: ['Vika', 'Vova', 'Alex', 'Andy']}
+            }
+    }
+
+    console.log(copyObj(old, {}));
+
+</script>
+
+</body>
+</html>
