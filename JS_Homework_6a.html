@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS_Homework_6</title>
+</head>
+<body>
+
+<!-- Технические требования:
+Написать функцию createNewUser(), которая будет создавать и возвращать объект "пользователь".
+При вызове функция должна спросить у вызывающего имя и фамилию.
+Используя данные, введенные пользователем, создать объект со свойствами firstName и lastName.
+Добавить в объект метод getLogin(), который будет возвращать первую букву имени пользователя,
+соединенную с фамилией пользователя, все в нижнем регистре. -->
+
+<script>
+
+    function createNewUser() {
+        let userName = prompt("What is your name?", '');
+        let userLastName = prompt("What is your last name?", '');
+
+        function User() {
+            this.firstName = userName;
+            this.lastName = userLastName;
+        }
+
+        return new User();
+    }
+
+    let user1 = createNewUser();
+    user1.getLogin = function () {
+        return this.firstName[0].concat(this.lastName).toLowerCase();
+    }
+
+    //check:
+    console.log(user1.getLogin());
+
+</script>
+
+</body>
+</html>
