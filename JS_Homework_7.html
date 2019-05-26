@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS homework_7</title>
+</head>
+<body>
+
+<!--Реализовать функцию нахождения уникальных объектов в массиве при сравнении с другим массивом,
+по указанному пользователем свойству. Технические требования:
+
+     Написать функцию excludeBy(), которая в качестве первых двух параметров будет принимать на вход два массива
+     с объектами любого типа, например:
+
+ const users = [{
+     name: "Ivan",
+     surname: "Ivanov",
+     gender: "male",
+     age: 30
+ },
+  {
+     name: "Anna",
+     surname: "Ivanova",
+     gender: "female",
+     age: 22
+ }]
+
+В качестве третьего параметра функция должна принимать имя поля, по которому будет проводиться сравнение.
+Функция должна вернуть новый массив, который будет включать те объекты из первого массива,
+значение указанного свойства которых не встречается среди объектов, представленных во втором массиве.
+Например, вызов функции excludeBy(peopleList, excluded, 'name') должен возвращать массив из тех пользователей
+peopleList, имя которых (свойство name) не встречается у пользователей, которые находятся в массиве excluded. -->
+
+<script>
+
+    function excludeBy(arr1, arr2, propValue) {
+        let arr3 = [];
+
+        for (let i = 0; i < arr1.length; i++) {
+            let flag = false;
+            if (propValue in arr1[i]) {
+                for (let j = 0; j < arr2.length; j++) {
+                    if (propValue in arr2[j] && arr2[j][propValue] == arr1[i][propValue]) {
+                        flag = true;
+                        break;
+                    }
+                }
+                if (!flag) {
+                    arr3.push(arr1[i]);
+                }
+            }
+        }
+        return arr3;
+    }
+
+    // check:
+
+    arrA = [
+        {color: 'red', type: 'square'},
+        {color: 'blue', type: 'round'},
+        {color: 'yellow', type: 'rectangular', name: 'uve'},
+        {color: 'white', type: 'square', name: 'riana'},
+        {color: 'red', type: 'oval', name: 'viki'}
+    ];
+    arrB = [
+        {color: 'red', type: 'round'},
+        {name: 'viki', age: '9', color: 'blond'},
+        {color: 'green', type: 'rectangular'}
+    ];
+
+    console.log(excludeBy(arrA, arrB, 'name'));
+
+</script>
+
+</body>
+</html>

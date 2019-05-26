@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>anagrams</title>
+</head>
+<body>
+
+<!-- Anagrams - are words that have the same number of same letters but in different order, for example:
+nap -> pan, ear -> rae, are, era.
+Write a function aclean(arr) that returns an array cleaned from anagrams. For example:
+let arr = ['nap', 'teacher', ' ear', 'rea'] -> ['nap', 'teacher', ear'].
+From every anagram group should remain only one word, no matter which one. -->
+
+<script>
+
+    let arr = ['mom', 'omm', 'sis', 'iss', 'dad', 'add', 'bor', 'bro', 'obr', 'ssi'];
+    let arr1 = [];
+
+    for (let i = 0; i < arr.length; i++) {
+        let arrWord = [...arr[i]];
+        arrWord.sort();
+        arr1[i] = arrWord.join("");
+    }
+
+    let map = new Map();
+
+    for (let i = 0; i < arr1.length; i++){
+        map.set(arr1[i], i);
+    }
+
+    let arr2 = [];
+    let count = 0;
+
+    for (let key of map.keys()) {
+        arr2[count] = key;
+        count++;
+    }
+
+    console.log(arr2);
+
+</script>
+
+</body>
+</html>
