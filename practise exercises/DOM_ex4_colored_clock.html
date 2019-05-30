@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Colored clock</title>
+</head>
+<body>
+
+<span id="hours">H</span>
+<span>:</span>
+<span id="minutes">M</span>
+<span>:</span>
+<span id="seconds">S</span>
+
+<script>
+
+    let time = new Date();
+    let hour = time.getHours();
+    let min = time.getMinutes();
+    let sec = time.getSeconds();
+
+    document.getElementById("hours").innerText = hour;
+    document.getElementById("minutes").innerText = min;
+    document.getElementById("seconds").innerHTML = sec;
+
+    document.getElementById("hours").style.color = "red";
+    document.getElementById("minutes").style.color = "green";
+    document.getElementById("seconds").style.color = "blue";
+
+</script>
+
+</body>
+</html>

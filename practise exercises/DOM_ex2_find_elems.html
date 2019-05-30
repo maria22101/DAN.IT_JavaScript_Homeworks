@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Find elems</title>
+</head>
+<body>
+
+<form name="search">
+
+    <table id="age-table">
+        <tr>
+            <td>Age:</td>
+            <td id="age-list">
+                <lable>
+                    <input type="radio" name="age" value="young">less than 18
+                </lable>
+                <lable>
+                    <input type="radio" name="age" value="mature">18-50
+                </lable>
+                <lable>
+                    <input type="radio" name="age" value="senior">more than 50
+                </lable>
+            </td>
+        </tr>
+        <tr>
+            <td>Aditionally:</td>
+            <td>
+                <input type="text" name="info[0]">
+                <input type="text" name="info[1]">
+                <input type="text" name="info[2]">
+            </td>
+        </tr>
+    </table>
+
+    <input type="submit" value="Search!">
+
+</form>
+
+<script>
+    //How to find the table with id="age-table"
+    let table = document.getElementById("age-table");
+
+    //How to find all label elements inside that table (there should be three of them)
+    let lables = table.getElementsByTagName("lable");
+
+    //How to find the first td in that table (with the word "Age")
+    let firstTd = table.getElementsByTagName("td")[0];
+
+    //How to find the form with the name search
+    let searchForm = document.getElementsByName("search")[0];
+
+    //How to find the first input in that form
+    let firstInput = searchForm.getElementsByTagName("input")[0];
+
+    //How to find the last input in that form
+    let inputNum = searchForm.getElementsByTagName("input").length;
+    let lastInput = searchForm.getElementsByTagName("input")[inputNum - 1];
+
+    console.log(lastInput);
+    console.dir(table); //shows the element as a DOM object, good to explore its properties
+
+</script>
+
+</body>
+</html>

@@ -17,7 +17,7 @@ For example, if now is 23:00 then the function should return 3600 -->
         let hoursLeft = 24 - todayCurrentTime.getHours() - 1;
         let minutesLeft = 60 - todayCurrentTime.getMinutes() - 1;
         let secondsLeft = todayCurrentTime.getSeconds() - 1;
-        let secondsLeftToTomorrow =  hoursLeft + " hours, " + minutesLeft + " min " + secondsLeft + " sec left to tomorrow";
+        let secondsLeftToTomorrow = hoursLeft + " hours, " + minutesLeft + " min " + secondsLeft + " sec left to tomorrow";
 
         return secondsLeftToTomorrow;
     }
