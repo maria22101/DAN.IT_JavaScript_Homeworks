@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS_Homework_9</title>
+</head>
+<body>
+
+<!-- Реализовать функцию, которая будет считать возраст пользователя и его знак зодиака. Технические требования:
+        - При запуске программы - в диалоговом окне спросить дату рождения пользователя (текст в формате dd.mm.yyyy)
+        - Вывести в модальном окне сообщение: Вам ? лет! - Вместо ? подставить возраст пользователя.
+        - Вывести в отдельном модальном окне знак зодиака пользователя в формате: Ваш знак зодиака: ?.
+
+Не обязательное задание продвинутой сложности:
+        - Выводить также в год какого животного по китайскому календарю родился пользователь. -->
+
+<script>
+
+    function yourZodiac() {
+        let birthDate = prompt("What is your birthday? Please, enter in format dd.mm.yyyy", '');
+
+        let birthDay = birthDate.substring(0, 2);
+        let birthMonth = birthDate.substring(3, 5) - 1;
+        let birthYear = birthDate.substring(birthDate.length - 4);
+        let userBirthDate = new Date(birthYear, birthMonth, birthDay);
+
+        let today = new Date(Date.now());
+        let fullCurrentYear = today.getFullYear();
+        let fullCurrentMonth = today.getMonth();
+        let fullCurrentDay = today.getDate();
+
+        let userAge;
+        let userZodiacSign;
+        let userChineeseYearAnimal;
+
+        if (birthMonth < fullCurrentMonth) {
+            userAge = fullCurrentYear - birthYear;
+        } else if (birthMonth == fullCurrentMonth) {
+            if (birthDay <= fullCurrentDay) {
+                userAge = fullCurrentYear - birthYear;
+            } else {
+                userAge = fullCurrentYear - birthYear - 1;
+            }
+        } else {
+            userAge = fullCurrentYear - birthYear - 1;
+        }
+
+        let zodiacNamesArray = ['Water bearer', 'Fish', 'Ram', 'Bull', 'Twins', 'Crab', 'Lion', 'Virgin', 'Scales', 'Scorpio', 'Archer', 'Goat'];
+        let zodiacStartMonthArray = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+        let zodiacEndMonthArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 0];
+        let zodiacStartDayArray = [20, 19, 21, 20, 21, 21, 23, 23, 23, 23, 22, 22];
+        let zodiacEndDayArray = [18, 20, 19, 20, 20, 22, 22, 22, 22, 21, 21, 19];
+
+        let userZodiacArray = [];
+        for (let i = 0; i < 11; i++) {
+            userZodiacArray[i] = {
+                zodiacSign: zodiacNamesArray[i],
+                startDate: new Date(birthYear, zodiacStartMonthArray[i], zodiacStartDayArray[i]),
+                endDate: new Date(birthYear, zodiacEndMonthArray[i], zodiacEndDayArray[i])
+            }
+        }
+        userZodiacArray[11] = {
+            zodiacSign: zodiacNamesArray[11],
+            startDate: new Date(birthYear - 1, zodiacStartMonthArray[11], zodiacStartDayArray[11]),
+            endDate: new Date(birthYear, zodiacEndMonthArray[11], zodiacEndDayArray[11])
+        }
+
+        for (let elem of userZodiacArray) {
+            if (userBirthDate >= elem.startDate && userBirthDate <= elem.endDate){
+                userZodiacSign = elem.zodiacSign;
+            }
+        }
+
+        let chineeseYearAnimal = ['Rat', 'Ox', 'Tiger', 'Rabbit', 'Dragon', 'Snake', 'Horse', 'Goat', 'Monkey', 'Rooster', 'Dog', 'Pig'];
+        let chineeseYearIndicator = [4, 5, 6, 7, 8, 9, 10, 11, 0, 1, 2, 3];
+        let chineeseYearArray =[];
+        for (let i = 0; i < 12 ; i++) {
+            chineeseYearArray[i] = {
+                chineeseYearAnimal: chineeseYearAnimal[i],
+                chineeseYearIndicator: chineeseYearIndicator[i]
+            }
+        }
+
+        for (let elem of chineeseYearArray) {
+            if (birthYear % 12 == elem.chineeseYearIndicator) {
+                userChineeseYearAnimal = elem.chineeseYearAnimal;
+            }
+        }
+
+        alert("You are " + userAge + " years old");
+        alert("Your zodiac sign is " + userZodiacSign);
+        alert("Your Chineese year Animal is " + userChineeseYearAnimal);
+    }
+
+    yourZodiac();
+
+</script>
+
+</body>
