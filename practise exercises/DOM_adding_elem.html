@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dom_adding elem</title>
+</head>
+<body>
+
+<ol id="list">
+    <li>0</li>
+    <li>1</li>
+    <li>2</li>
+</ol>
+
+<script>
+
+    list.before("before");
+    list.after("after");
+
+    let addingElementToStart = document.createElement("li");
+    addingElementToStart.innerHTML = "Element to start";
+    list.prepend(addingElementToStart);
+
+    let addingElementToFinish = document.createElement("li");
+    addingElementToFinish.innerHTML = "Element to finish";
+    list.append(addingElementToFinish);
+
+</script>
+
+</body>
+</html>

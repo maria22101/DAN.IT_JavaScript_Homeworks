@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM_Attr_2</title>
+
+    <style>
+        #div1 {
+            border: red dotted 1px;
+            width: 20%;
+            margin: 10px;
+            padding: 5px;
+        }
+    </style>
+
+</head>
+<body>
+
+<!-- move the following div 20x to the right, by increasing its margin-left property -->
+
+<div id="div1">Hello world</div>
+
+<script>
+
+    let divStyle = getComputedStyle(document.body.firstElementChild);
+    let marginLeft = parseInt(divStyle.marginLeft) + 20;
+    document.getElementById("div1").style.marginLeft = `${marginLeft}px`;
+
+</script>
+
+</body>
+</html>

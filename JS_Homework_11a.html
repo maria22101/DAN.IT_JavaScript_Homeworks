@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS_Homework_11</title>
+</head>
+<body>
+
+<!--Реализовать функцию, которая будет добавлять список, введенный пользователем, на страницу.
+
+Технические требования:
+
+1/ При запуске программы спросить у пользователя в модальном окне число пунктов, которые будут в списке.
+
+2/ После введения пользователем числа, вывести модальное окно еще нужное количество раз (такое количество раз,
+какое число ввел пользователь в первом модальном окне), спрашивая у пользователя содержимое пунктов списка
+(пользователь может ввести любой текст).
+
+3/ После ввода последнего значения, вывести на странице список, введенный пользователем с помощью модальных окон.
+Через 10 секунд очистить страницу.
+
+Необходимо использовать шаблонные строки и функцию map массива для формирования контента списка
+перед выведением его на страницу. -->
+
+<script>
+    function displayUserList() {
+        let listPoints = prompt('How many point to be in the list? ', '');
+        let userEmptyList = new Array(Number(listPoints)).fill();
+        let userCompleteList = userEmptyList.map((elem, i) =>
+            prompt(`Enter content of point # ${i + 1}: `, ''));
+
+        let userList = document.createElement("ol");
+        for (let i = 0; i < userCompleteList.length; i++) {
+            let newLi = document.createElement("li");
+            newLi.innerHTML = userCompleteList[i];
+            userList.appendChild(newLi);
+        }
+
+        document.body.appendChild(userList);
+        setTimeout(() => document.body.getElementsByTagName("ol")[0].remove(), 10000);
+    }
+
+    displayUserList();
+
+</script>
+
+</body>
+</html>

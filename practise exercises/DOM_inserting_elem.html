@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM_inserting_elem</title>
+</head>
+<body>
+
+<!-- Write the code to insert the elements <li>2nd</li> and <li>3rd</li> between the two <li> -->
+
+<ul id="ul">
+    <li id="first_point">1st</li>
+    <li id="fourth_point">4th</li>
+</ul>
+
+<script>
+    let secondPoint = document.createElement('li');
+    secondPoint.innerHTML = '2nd';
+
+    let thirdPoint = document.createElement('li');
+    thirdPoint.innerHTML = '3rd';
+
+    ul.insertBefore(secondPoint, ul.children[1]);
+    ul.insertBefore(thirdPoint, ul.children[2]);
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM_create_elem</title>
+</head>
+<body>
+
+<ol id="list">
+    <li>0</li>
+    <li>1</li>
+    <li>2</li>
+</ol>
+
+<script>
+    let newLi = document.createElement("li");
+    newLi.innerHTML = "Hello, World!";
+    // list.appendChild(newLi); //inserting to the end
+
+    list.insertBefore(newLi, list.children[0]); // inserting before the 1st element of the list
+
+</script>
+
+</body>
+</html>

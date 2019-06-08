@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM_deleting_elems</title>
+</head>
+<body>
+
+<!-- create a function clear(elem) that removes everything from inside the element, but keeps the element itself -->
+
+<ol id="list">
+    <li>Hello</li>
+    <li>World</li>
+    <li>I</li>
+    <li>love</li>
+    <li>you!</li>
+</ol>
+
+<script>
+    function clear(elemId) {
+        for (let i = 0; elemId.children.length !=0;) {
+            elemId.children[i].remove();
+        }
+    }
+    clear(list);
+
+</script>
+
+</body>
+</html>

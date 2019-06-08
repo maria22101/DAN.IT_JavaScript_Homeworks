@@ -26,6 +26,24 @@
 Показывать таймер обратного отсчета (только секунды) перед очищением страницы. -->
 
 <script>
+    function displayUserList() {
+        let listPoints = prompt('How many point to be in the list? ', '');
+        let userEmptyList = new Array(Number(listPoints)).fill();
+        let userCompleteList = userEmptyList.map((elem, i) =>
+            prompt(`Enter content of point # ${i + 1}: `, ''));
+
+        let userList = document.createElement("ol");
+        for (let i = 0; i < userCompleteList.length; i++) {
+            let newLi = document.createElement("li");
+            newLi.innerHTML = userCompleteList[i];
+            userList.appendChild(newLi);
+        }
+
+        document.body.appendChild(userList);
+        setTimeout(() => document.body.getElementsByTagName("ol")[0].remove(), 10000);
+    }
+
+    displayUserList();
 
 </script>
 

@@ -2,11 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1043d8b4-6547-4ace-b97b-87aa6e7d09e4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/JS_Homework_10.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JS_Homework_11.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JS_Homework_9b.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practise exercises/DOM_adding_elem.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practise exercises/DOM_attributes_ex1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practise exercises/DOM_attributes_ex2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practise exercises/DOM_createCalendar.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practise exercises/DOM_creating_elem.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practise exercises/DOM_deleting_elems.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practise exercises/DOM_inserting_elem.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JS_Homework_9.html" beforeDir="false" afterPath="$PROJECT_DIR$/JS_Homework_9a.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS_Homework_11.html" beforeDir="false" afterPath="$PROJECT_DIR$/JS_Homework_11.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practise exercises/DOM_ex4_colored_clock.html" beforeDir="false" afterPath="$PROJECT_DIR$/practise exercises/DOM_ex4_colored_clock.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -19,29 +24,38 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/practise exercises/DOM_deleting_elems.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="24" column="16" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/practise exercises/DOM_inserting_elem.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="23" column="48" selection-start-line="23" selection-start-column="48" selection-end-line="23" selection-end-column="48" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/practise exercises/DOM_createCalendar.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="13" selection-start-line="13" selection-end-line="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/JS_Homework_9b.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="424">
-              <caret line="85" column="60" selection-start-line="85" selection-start-column="60" selection-end-line="85" selection-end-column="60" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/JS_Homework_10.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="30" column="48" selection-start-line="30" selection-start-column="48" selection-end-line="30" selection-end-column="48" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/JS_Homework_11.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="25" column="82" selection-start-line="25" selection-start-column="82" selection-end-line="25" selection-end-column="82" />
+            <state relative-caret-position="441">
+              <caret line="42" column="82" selection-start-line="42" selection-start-column="82" selection-end-line="42" selection-end-column="82" />
             </state>
           </provider>
         </entry>
@@ -49,8 +63,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/practise exercises/date.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="23" selection-start-line="23" selection-end-line="23" />
+            <state relative-caret-position="289">
+              <caret line="17" column="42" selection-start-line="17" selection-start-column="42" selection-end-line="17" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -99,12 +113,19 @@
         <option value="$PROJECT_DIR$/practise exercises/date.html" />
         <option value="$PROJECT_DIR$/practise exercises/DOM_ex2_find_elems.html" />
         <option value="$PROJECT_DIR$/practise exercises/DOM_ex3_js_influence.html" />
-        <option value="$PROJECT_DIR$/practise exercises/DOM_ex4_colored_clock.html" />
         <option value="$PROJECT_DIR$/JS_Homework_9.html" />
         <option value="$PROJECT_DIR$/practise exercises/JS_Homework_10.html" />
         <option value="$PROJECT_DIR$/JS_Homework_10.html" />
-        <option value="$PROJECT_DIR$/JS_Homework_11.html" />
+        <option value="$PROJECT_DIR$/practise exercises/DOM_ex4_colored_clock.html" />
         <option value="$PROJECT_DIR$/JS_Homework_9b.html" />
+        <option value="$PROJECT_DIR$/practise exercises/DOM_attributes.html" />
+        <option value="$PROJECT_DIR$/practise exercises/DOM_attributes_ex2.html" />
+        <option value="$PROJECT_DIR$/practise exercises/DOM_creating_elem.html" />
+        <option value="$PROJECT_DIR$/practise exercises/DOM_adding_elem.html" />
+        <option value="$PROJECT_DIR$/practise exercises/DOM_deleting_elems.html" />
+        <option value="$PROJECT_DIR$/practise exercises/DOM_inserting_elem.html" />
+        <option value="$PROJECT_DIR$/practise exercises/DOM_createCalendar.html" />
+        <option value="$PROJECT_DIR$/JS_Homework_11.html" />
       </list>
     </option>
   </component>
@@ -120,7 +141,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -132,6 +152,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -178,18 +199,21 @@
       <workItem from="1558856263508" duration="14338000" />
       <workItem from="1558888054826" duration="12238000" />
       <workItem from="1559142887168" duration="25045000" />
-      <workItem from="1559321395646" duration="2482000" />
+      <workItem from="1559321395646" duration="6766000" />
+      <workItem from="1559494740434" duration="8288000" />
+      <workItem from="1559581834211" duration="2568000" />
+      <workItem from="1559982908589" duration="6542000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="123265000" />
+    <option name="totallyTimeSpent" value="144947000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17038691" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1875" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -314,13 +338,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/practise exercises/DOM_ex4_colored_clock.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="60" selection-start-line="27" selection-start-column="60" selection-end-line="27" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/practise exercises/DOM_ex3_js_influence.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -363,6 +380,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/practise exercises/DOM_ex4_colored_clock.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS_Homework_9b.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="373">
+          <caret line="91" column="72" selection-start-line="91" selection-start-column="72" selection-end-line="91" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/JS_Homework_10.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
@@ -370,24 +401,66 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/practise exercises/date.html">
+    <entry file="file://$PROJECT_DIR$/practise exercises/DOM_attributes_ex1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="7" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/practise exercises/DOM_attributes_ex2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/practise exercises/DOM_creating_elem.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/practise exercises/DOM_adding_elem.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="39" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/practise exercises/DOM_deleting_elems.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="16" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/practise exercises/DOM_inserting_elem.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
+          <caret line="23" column="48" selection-start-line="23" selection-start-column="48" selection-end-line="23" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/practise exercises/date.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="42" selection-start-line="17" selection-start-column="42" selection-end-line="17" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/practise exercises/DOM_createCalendar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/JS_Homework_11.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="82" selection-start-line="25" selection-start-column="82" selection-end-line="25" selection-end-column="82" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JS_Homework_9b.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="424">
-          <caret line="85" column="60" selection-start-line="85" selection-start-column="60" selection-end-line="85" selection-end-column="60" />
+        <state relative-caret-position="441">
+          <caret line="42" column="82" selection-start-line="42" selection-start-column="82" selection-end-line="42" selection-end-column="82" />
         </state>
       </provider>
     </entry>
